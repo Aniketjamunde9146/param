@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What We Provide - Param Coaching Classes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f7f7f7;
+            color: #333;
+        }
+
+        section.services-section {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(20px);
+            border-radius: 25px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        section.services-section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: #111;
+        }
+
+        .services-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .service-card {
+            flex: 1 1 250px;
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(15px);
+            padding: 1.5rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #111;
+        }
+
+        .service-card p {
+            color: #111;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        /* Responsive */
+        @media(max-width:768px) {
+            .services-cards {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="services-section">
+        <h2>What We Provide</h2>
+
+        <div class="services-cards">
+            <!-- 11th Class -->
+            <div class="service-card">
+                <h3>11th Class</h3>
+                <p>Comprehensive guidance for 11th grade students with focus on Physics, Chemistry, Mathematics, and
+                    Biology to build strong fundamentals.</p>
+            </div>
+
+            <!-- 12th Class -->
+            <div class="service-card">
+                <h3>12th Class</h3>
+                <p>Advanced coaching for 12th grade students preparing for board exams and competitive exams with
+                    practical examples and problem-solving practice.</p>
+            </div>
+
+            <!-- JEE PCM -->
+            <div class="service-card">
+                <h3>JEE PCM</h3>
+                <p>Specialized preparation for Joint Entrance Examination (JEE) focusing on Physics, Chemistry, and
+                    Mathematics (PCM) for engineering aspirants.</p>
+            </div>
+
+            <!-- JEE PCMB -->
+            <div class="service-card">
+                <h3>JEE PCMB</h3>
+                <p>Integrated coaching for JEE aspirants covering Physics, Chemistry, Mathematics, and Biology (PCMB) to
+                    ensure holistic understanding.</p>
+            </div>
+
+            <!-- MHT-CET -->
+            <div class="service-card">
+                <h3>MHT-CET Preparation</h3>
+                <p>Complete preparation for Maharashtra Health & Technical Common Entrance Test (MHT-CET) including mock
+                    tests, previous year questions, and strategy planning.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

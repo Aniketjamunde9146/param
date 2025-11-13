@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Param Coaching Classes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f7f7f7;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar .logo {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #111;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links li a {
+            color: #111;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.3rem 0.5rem;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .nav-links li a:hover,
+        .nav-links li a.active {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        /* About Section */
+        .about-section {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(20px);
+            border-radius: 25px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Hero / Founder */
+        .about-hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .about-content {
+            flex: 1 1 400px;
+        }
+
+        .about-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #111;
+        }
+
+        .about-content p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .about-image {
+            flex: 1 1 300px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(15px);
+            padding: 1rem;
+            border-radius: 20px;
+        }
+
+        .about-image img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #fff;
+            margin-bottom: 1rem;
+            transition: transform 0.3s;
+        }
+
+        .about-image img:hover {
+            transform: scale(1.05);
+        }
+
+        .about-image h3,
+        .about-image p {
+            color: #111;
+            margin-bottom: 0.3rem;
+        }
+
+        /* Stats Section */
+        .about-stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(15px);
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            flex: 1 1 200px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-card h2 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: #111;
+        }
+
+        .stat-card p {
+            color: #111;
+            font-weight: 500;
+        }
+
+        /* Mission Section */
+        .about-mission {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem 0;
+        }
+
+        .about-mission h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #111;
+        }
+
+        .about-mission p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #111;
+        }
+
+        /* Contact & Social */
+        .about-contact {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .about-contact a {
+            color: #111;
+            text-decoration: none;
+            margin: 0 0.5rem;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .about-contact a:hover {
+            color: #0077ff;
+        }
+
+        /* Responsive */
+        @media(max-width:768px) {
+            .about-hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-content,
+            .about-image {
+                max-width: 100%;
+            }
+
+            .about-stats {
+                flex-direction: column;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <!-- About Section -->
+    <section class="about-section">
+
+        <!-- Hero / Founder -->
+        <div class="about-hero">
+            <div class="about-content">
+                <h1>Param Coaching Classes</h1>
+                <p><strong>Founded by:</strong> Samadhan Jadhav</p>
+                <p><strong>Experience:</strong> 15+ years guiding students</p>
+                <p>Located on <strong>Jafrarad Road, Bhokardan</strong>, Param Coaching Classes has helped hundreds of
+                    11th and 12th grade students excel academically. Our teaching combines strong fundamentals,
+                    practical examples, and modern study techniques to make learning both effective and enjoyable.</p>
+                <p>Did you know? Students who actively practice problem-solving for 30 minutes daily improve logical
+                    thinking and retention by over 50%. At Param Coaching, we focus on interactive teaching, doubt
+                    clearing, and personalized guidance for each student.</p>
+            </div>
+
+            <div class="about-image">
+                <img src="ceo.png" alt="Samadhan Jadhav">
+                <h3>Samadhan Jadhav</h3>
+                <p>Founder & Educator</p>
+            </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="about-stats">
+            <div class="stat-card">
+                <h2>5000+</h2>
+                <p>Students Mentored</p>
+            </div>
+            <div class="stat-card">
+                <h2>15</h2>
+                <p>Years of Experience</p>
+            </div>
+            <div class="stat-card">
+                <h2>90%+</h2>
+                <p>Success Rate</p>
+            </div>
+        </div>
+
+        <!-- Mission -->
+        <div class="about-mission">
+            <h2>Our Mission</h2>
+            <p>To provide quality education, personalized guidance, and motivation for students to excel academically
+                and build a bright future. We aim to make learning engaging, practical, and result-oriented.</p>
+        </div>
+
+        <!-- Contact & Social -->
+        <div class="about-contact">
+            <h3>Contact Us</h3>
+            <p>Phone: <a href="tel:9404551511">9404551511</a></p>
+            <p>Follow us on Instagram: <a href="https://www.instagram.com/sam_patil_jadhav/?__pwa=1"
+                    target="_blank">Instagram</a></p>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
